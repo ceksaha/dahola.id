@@ -9,8 +9,9 @@ Panel admin berada di `/admin/`. Setelah aktif, editor dapat memperbarui menu da
 3. Di pengaturan situs Netlify, aktifkan **Identity**.
 4. Di **Identity > Registration**, pilih **Invite only** agar pengunjung umum tidak dapat membuat akun admin.
 5. Di **Identity > Services**, aktifkan **Git Gateway** dan izinkan repository website yang terhubung.
-6. Di **Identity > Invite users**, undang alamat email editor yang dipercaya. Editor harus menerima undangan sebelum masuk.
-7. Setelah deployment sukses, buka `https://alamat-situs-anda/admin/` dan masuk menggunakan akun yang diundang.
+6. Di **Identity > Invite users**, undang alamat email editor yang dipercaya.
+7. Pastikan deployment terbaru sukses, lalu buka tautan undangan dari email. Halaman utama memuat widget Netlify Identity untuk memproses token undangan; ikuti dialog yang muncul untuk membuat password dan mengonfirmasi akun.
+8. Setelah undangan diterima, buka `https://alamat-situs-anda/admin/` dan masuk menggunakan akun tersebut.
 
 ## Mengedit konten
 

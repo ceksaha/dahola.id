@@ -7,6 +7,18 @@
 <meta name="description" content="Pantau suhu dan kelembapan ruangan dengan sensor Dahola. Terhubung melalui LAN atau WiFi dan akses data lewat aplikasi monitoring web.">
 <meta name="theme-color" content="#f6f8f9">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", function (user) {
+      if (!user) {
+        window.netlifyIdentity.on("login", function () {
+          window.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 <script src="site.js" defer></script>
 <style>
 body{margin:0;font-family:'Poppins',Arial,sans-serif;color:#12313A;background:#F6F8F9}
