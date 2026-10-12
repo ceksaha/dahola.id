@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dahola - Sensor Suhu &amp; Kelembapan Ruangan</title>
+<meta name="description" content="Pantau suhu dan kelembapan ruangan dengan sensor Dahola. Terhubung melalui LAN atau WiFi dan akses data lewat aplikasi monitoring web.">
+<meta name="theme-color" content="#f6f8f9">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="site.js" defer></script>
+<style>
+body{margin:0;font-family:'Poppins',Arial,sans-serif;color:#12313A;background:#F6F8F9}
+*{box-sizing:border-box}
+a{color:inherit;text-decoration:none}
+.w{max-width:1160px;margin:0 auto;padding:0 24px}
+.sec{padding:80px 0}
+.white{background:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:20px 0;flex-wrap:wrap;gap:12px}
+.logo{font-weight:700;font-size:24px;color:#0E7C86;letter-spacing:-0.5px}
+.links{display:flex;gap:28px;font-size:15px;flex-wrap:wrap}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:48px;align-items:center;padding:48px 0 88px}
+.eyebrow{color:#0E7C86;font-weight:600;font-size:14px;letter-spacing:1px;text-transform:uppercase}
+h1{font-size:46px;line-height:1.15;margin:16px 0;letter-spacing:-1px}
+h2{font-size:34px;line-height:1.2;margin:0 0 12px;letter-spacing:-0.5px}
+h3{font-size:19px;margin:0 0 8px}
+p{margin:0;line-height:1.65;color:#41606A}
+.lead{font-size:18px}
+.price{margin:28px 0 24px}
+.price b{font-size:40px;color:#12313A;display:block}
+.price span{font-size:14px;color:#41606A}
+.row{display:flex;gap:14px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 28px;border-radius:10px;font-weight:600;font-size:16px}
+.cta{background:#C2410C;color:#fff}
+.ghost{border:2px solid #0E7C86;color:#0E7C86}
+.ph{background:#E3EEF0;border:2px dashed #7FB1B8;border-radius:20px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;color:#2A5A63;font-weight:600;text-align:center;padding:16px}
+.ph small{font-weight:400;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:40px}
+.card{background:#fff;border-radius:16px;padding:28px;border:1px solid #DCE6E8}
+.white .card{background:#F6F8F9}
+.ico{width:44px;height:44px;border-radius:12px;background:#0E7C86;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.tag{display:inline-block;font-size:13px;font-weight:600;color:#0B5F67;background:#DDF0F2;border-radius:999px;padding:4px 12px;margin-bottom:14px}
+.pricebox{max-width:520px;margin:40px auto 0;background:#fff;border:2px solid #0E7C86;border-radius:20px;padding:36px;text-align:center}
+.pricebox ul{list-style:none;padding:0;margin:20px 0 28px;color:#41606A;line-height:2}
+table{width:100%;border-collapse:collapse;margin-top:32px;background:#fff;border-radius:12px;overflow:hidden}
+.scroll{overflow-x:auto}
+td{padding:16px 20px;border-bottom:1px solid #DCE6E8;font-size:15px}
+td:first-child{font-weight:600;width:40%}
+details{background:#fff;border:1px solid #DCE6E8;border-radius:12px;padding:18px 22px;margin-top:12px}
+summary{font-weight:600;cursor:pointer;min-height:24px}
+details p{margin-top:10px}
+.final{background:#0E7C86;color:#fff;text-align:center;padding:72px 24px}
+.final p{color:#DDF0F2;margin:12px 0 28px}
+.final h2{color:#fff}
+.foot{padding:32px 0;font-size:14px;color:#41606A}
+.foot .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.nav{padding:18px 0}
+.links a{padding:8px 0}
+.links a:hover,.links a:focus-visible{color:#0E7C86}
+.btn{transition:background-color .2s ease,border-color .2s ease,transform .2s ease}
+.btn:hover{transform:translateY(-2px)}
+.cta{background:#B9380A}
+.cta:hover{background:#982D08}
+.ghost:hover{background:#E7F2F3}
+a:focus-visible,summary:focus-visible{outline:3px solid #E9A23B;outline-offset:4px}
+.hero{padding-top:36px}
+.hero h1{max-width:640px}
+.hero-visual{background:#fff;border-radius:24px;border:1px solid #DCE6E8;padding:24px;box-shadow:0 18px 48px rgba(18,49,58,.08)}
+.hero-visual img{width:100%;max-width:420px;height:auto;display:block;margin:auto}
+.trust-row{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.trust-item{background:#EAF2F3;border-radius:999px;padding:8px 14px;font-size:13px;font-weight:600;color:#28545C}
+.section-intro{max-width:760px}
+.grid{align-items:stretch}
+.card{box-shadow:0 6px 20px rgba(18,49,58,.035)}
+.pricebox{box-shadow:0 18px 48px rgba(18,49,58,.08)}
+.gallery-card{background:#fff;border-radius:20px;border:1px solid #DCE6E8;padding:16px;display:flex;align-items:center;justify-content:center;min-height:280px}
+.gallery-card img{width:100%;height:auto;max-height:360px;object-fit:contain;display:block}
+.demo-card{background:#EAF2F3;border-radius:20px;padding:32px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:16px}
+.demo-card p{max-width:380px}
+.spec-note{margin-top:16px;font-size:14px}
+table th{padding:14px 20px;background:#EAF2F3;text-align:left;font-size:14px}
+table td:first-child{width:40%}
+tr:last-child td{border-bottom:0}
+.final .cta{background:#fff;color:#0E7C86}
+.final .cta:hover{background:#EAF2F3}
+.final .ghost:hover{background:rgba(255,255,255,.12)}
+.foot a:hover{text-decoration:underline}
+@media(max-width:700px){
+.w{padding-left:20px;padding-right:20px}
+h1{font-size:36px}
+h2{font-size:28px}
+.sec{padding:56px 0}
+.nav{gap:10px}
+.links{display:flex;order:3;width:100%;justify-content:space-between;gap:12px;font-size:13px}
+.nav>.btn{min-height:42px;padding:0 16px;font-size:14px}
+.hero{padding:32px 0 60px;gap:32px}
+.lead{font-size:16px}
+.price b{font-size:36px}
+.pricebox{padding:28px 20px}
+.demo-card{padding:24px}
+.foot .w{display:block}
+.foot .w span{display:block;margin-top:8px}
+}
+@media(max-width:380px){
+h1{font-size:32px}
+.links{font-size:12px;gap:8px}
+.btn{padding:0 18px}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="w">
+<div class="nav">
+<div class="logo">Dahola</div>
+<nav class="links" aria-label="Navigasi utama"><a href="#fitur">Fitur</a><a href="#harga">Harga</a><a href="#segmen">Cocok untuk</a><a href="#faq">FAQ</a></nav>
+<a class="btn cta" href="#harga">Beli Sekarang</a>
+</div>
+<div class="hero">
+<div>
+<div class="eyebrow">Monitoring suhu &amp; kelembapan ruangan</div>
+<h1>Pantau suhu dan kelembapan ruangan, kapan saja.</h1>
+<p class="lead">Dahola membaca suhu dan humidity secara real-time dan mengirim datanya lewat LAN atau WiFi ke aplikasi monitoring berbasis web.</p>
+<div class="price"><b>Rp3.000.000</b><span>per unit &middot; belum termasuk PPN</span></div>
+<div class="row"><a class="btn cta" href="https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20bertanya%20tentang%20sensor%20suhu%20dan%20kelembapan." target="_blank" rel="noopener noreferrer">Pesan via WhatsApp</a><a class="btn ghost" href="#fitur">Lihat Fitur</a></div>
+<div class="trust-row" aria-label="Informasi produk"><span class="trust-item">Koneksi LAN atau WiFi</span><span class="trust-item">Monitoring berbasis web</span></div>
+</div>
+<div class="hero-visual"><img src="assets/produk-depan-dahola.png" alt="Sensor suhu dan kelembapan Dahola tampak depan" fetchpriority="high"></div>
+</div>
+</div>
+</header>
+
+<main>
+<div class="white"><div class="w sec" id="problem">
+<h2>Suhu yang tak terpantau, risiko yang tak terlihat.</h2>
+<p class="lead">Suhu dan kelembapan yang menyimpang bisa merusak barang, obat, perangkat, dan kenyamanan ruangan sebelum Anda sadar.</p>
+<div class="grid">
+<div class="card"><span class="tag">Masalah</span><h3>Pengecekan manual</h3><p>Mengandalkan termometer dan ingatan membuat data terlewat, terutama di luar jam kerja.</p></div>
+<div class="card"><span class="tag">Solusi</span><h3>Pemantauan terus-menerus</h3><p>Dahola membaca kondisi ruangan secara real-time, dan datanya dapat dilihat kapan saja dari aplikasi web.</p></div>
+</div>
+</div></div>
+
+<div class="w sec" id="fitur">
+<h2>Fitur utama</h2>
+<p class="lead">Sederhana dipasang, jelas dibaca.</p>
+<div class="grid">
+<div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 14.8V4a2 2 0 0 0-4 0v10.8a4 4 0 1 0 4 0z"/></svg></div><h3>Suhu &amp; humidity real-time</h3><p>Dua pembacaan penting ruangan dalam satu perangkat.</p></div>
+<div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0M8.5 16a5 5 0 0 1 7 0"/><circle cx="12" cy="19" r="1"/></svg></div><h3>Koneksi LAN atau WiFi</h3><p>Pilih sambungan kabel atau nirkabel sesuai kondisi ruangan Anda.</p></div>
+<div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><h3>Aplikasi monitoring web</h3><p>Lihat data dari browser, tanpa perangkat tambahan.</p></div>
+<div class="card"><div class="ico"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div><h3>Mudah dipasang, hemat daya</h3><p>Pasang di titik yang ingin dipantau dan langsung digunakan.</p></div>
+</div>
+</div>
+
+<div class="white"><div class="w sec" id="galeri">
+<h2>Galeri produk</h2>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+<div class="gallery-card"><img src="assets/produk-depan-dahola.png" alt="Tampilan depan perangkat sensor Dahola" loading="lazy"></div>
+<div class="gallery-card"><img src="assets/produk-paket-dahola.png" alt="Paket perangkat Dahola DL-ETH01 beserta sensor DTH-280" loading="lazy"></div>
+</div>
+<div class="demo-card" style="margin-top:24px"><h3>Ingin melihat aplikasi monitoring?</h3><p>Hubungi tim Dahola untuk meminta informasi dan demo tampilan aplikasi sebelum memesan.</p><a class="btn ghost" href="https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20melihat%20demo%20aplikasi%20monitoring." target="_blank" rel="noopener noreferrer">Minta demo aplikasi</a></div>
+</div></div>
+
+<div class="w sec" id="harga">
+<div style="text-align:center"><h2>Harga transparan.</h2><p class="lead">Tanyakan ketersediaan dan proses pemesanan langsung kepada tim Dahola.</p></div>
+<div class="pricebox">
+<h3>Dahola Sensor Suhu &amp; Kelembapan</h3>
+<b style="font-size:44px;display:block;margin-top:8px">Rp3.000.000</b>
+<ul><li>Harga per unit</li><li>Belum termasuk PPN dan ongkos kirim</li><li>Koneksi LAN atau WiFi dan aplikasi monitoring web</li></ul>
+<div class="row" style="justify-content:center"><a class="btn cta" href="https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20memesan%20sensor%20Dahola%20seharga%20Rp3.000.000." target="_blank" rel="noopener noreferrer">Tanya &amp; pesan via WhatsApp</a><a class="btn ghost" href="mailto:cek.sahatuh@gmail.com?subject=Permintaan%20informasi%20Dahola">Hubungi via email</a></div>
+</div>
+</div>
+
+<div class="white" id="segmen"><div class="w sec">
+<h2>Cocok untuk siapa saja</h2>
+<div class="grid">
+<div class="card"><span class="tag">Perusahaan</span><h3>Gudang, pabrik, data center</h3><p>Pantau titik-titik penting sesuai kebutuhan, beli per unit, dan dapatkan faktur.</p></div>
+<div class="card"><span class="tag">Instansi</span><h3>Rumah sakit, lab, sekolah, kantor</h3><p>Pantauan andal dengan sertifikat kalibrasi yang disiapkan untuk kebutuhan instansi.</p></div>
+<div class="card"><span class="tag">Perorangan</span><h3>Rumah, ruang server kecil, koleksi</h3><p>Mudah dipasang dengan harga yang jelas, dan bisa dibeli langsung.</p></div>
+</div>
+</div></div>
+
+<div class="w sec" id="info">
+<h2>Informasi produk</h2>
+<div class="scroll"><table>
+<thead><tr><th scope="col">Informasi</th><th scope="col">Detail</th></tr></thead>
+<tbody>
+<tr><td>Parameter yang dipantau</td><td>Suhu dan kelembapan</td></tr>
+<tr><td>Konektivitas</td><td>LAN atau WiFi</td></tr>
+<tr><td>Aplikasi monitoring</td><td>Berbasis web, diakses melalui browser</td></tr>
+<tr><td>Sertifikat kalibrasi</td><td>Dapat disiapkan untuk kebutuhan instansi. Konfirmasikan detail saat menghubungi kami.</td></tr>
+</tbody>
+</table></div>
+<p class="spec-note">Rentang pengukuran, akurasi, daya, dimensi, garansi, dan ongkos kirim dapat dikonfirmasikan langsung kepada tim Dahola sebelum pemesanan.</p>
+</div>
+
+<div class="white" id="faq"><div class="w sec">
+<h2>Pertanyaan umum</h2>
+<details><summary>Bagaimana Dahola terhubung ke jaringan?</summary><p>Dahola terhubung lewat LAN atau WiFi.</p></details>
+<details><summary>Bagaimana cara melihat datanya?</summary><p>Data dilihat melalui aplikasi monitoring berbasis web yang dibuka dari browser.</p></details>
+<details><summary>Apakah ada harga grosir?</summary><p>Saat ini tidak ada harga grosir. Harga Rp3.000.000 per unit, belum termasuk PPN.</p></details>
+<details><summary>Apakah tersedia sertifikat kalibrasi?</summary><p>Sertifikat kalibrasi disiapkan untuk kebutuhan instansi. Hubungi kami untuk detailnya.</p></details>
+<details><summary>Bagaimana garansi dan pengirimannya?</summary><p>Informasi garansi, ongkos kirim, dan estimasi pengiriman dapat dikonfirmasikan sebelum pemesanan. Silakan hubungi tim Dahola.</p></details>
+</div></div>
+
+<div class="final" id="kontak">
+<h2>Mulai pantau ruangan Anda hari ini.</h2>
+<p>Tanyakan spesifikasi, ketersediaan, faktur, atau pemesanan langsung kepada tim kami.</p>
+<div class="row" style="justify-content:center"><a class="btn cta" href="https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Dahola." target="_blank" rel="noopener noreferrer">Hubungi via WhatsApp</a><a class="btn ghost" style="border-color:#fff;color:#fff" href="mailto:cek.sahatuh@gmail.com?subject=Informasi%20produk%20Dahola">Kirim email</a></div>
+</div>
+</main>
+<footer class="foot"><div class="w"><span>&copy; Dahola</span><span>Email: <a href="mailto:cek.sahatuh@gmail.com">cek.sahatuh@gmail.com</a> &middot; WhatsApp: <a href="https://wa.me/6287883796782" target="_blank" rel="noopener noreferrer">0878-8379-6782</a></span></div></footer>
+</body>
+</html>
