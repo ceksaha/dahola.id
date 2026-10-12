@@ -1,0 +1,209 @@
+{
+  "siteTitle": "Dahola - Sensor Suhu & Kelembapan Ruangan",
+  "metaDescription": "Pantau suhu dan kelembapan ruangan dengan sensor Dahola. Terhubung melalui LAN atau WiFi dan akses data lewat aplikasi monitoring web.",
+  "brand": "Dahola",
+  "navigation": [
+    {
+      "label": "Fitur",
+      "href": "#fitur"
+    },
+    {
+      "label": "Harga",
+      "href": "#harga"
+    },
+    {
+      "label": "Cocok untuk",
+      "href": "#segmen"
+    },
+    {
+      "label": "FAQ",
+      "href": "#faq"
+    }
+  ],
+  "headerCta": {
+    "label": "Beli Sekarang",
+    "href": "#harga"
+  },
+  "hero": {
+    "eyebrow": "Monitoring suhu & kelembapan ruangan",
+    "title": "Pantau suhu dan kelembapan ruangan, kapan saja.",
+    "description": "Dahola membaca suhu dan humidity secara real-time dan mengirim datanya lewat LAN atau WiFi ke aplikasi monitoring berbasis web.",
+    "price": "Rp3.000.000",
+    "priceNote": "per unit · belum termasuk PPN",
+    "primaryCta": {
+      "label": "Pesan via WhatsApp",
+      "href": "https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20bertanya%20tentang%20sensor%20suhu%20dan%20kelembapan."
+    },
+    "secondaryCta": {
+      "label": "Lihat Fitur",
+      "href": "#fitur"
+    },
+    "highlights": [
+      "Koneksi LAN atau WiFi",
+      "Monitoring berbasis web"
+    ],
+    "image": "assets/produk-depan-dahola.png",
+    "imageAlt": "Sensor suhu dan kelembapan Dahola tampak depan"
+  },
+  "problem": {
+    "title": "Suhu yang tak terpantau, risiko yang tak terlihat.",
+    "description": "Suhu dan kelembapan yang menyimpang bisa merusak barang, obat, perangkat, dan kenyamanan ruangan sebelum Anda sadar.",
+    "cards": [
+      {
+        "label": "Masalah",
+        "title": "Pengecekan manual",
+        "description": "Mengandalkan termometer dan ingatan membuat data terlewat, terutama di luar jam kerja."
+      },
+      {
+        "label": "Solusi",
+        "title": "Pemantauan terus-menerus",
+        "description": "Dahola membaca kondisi ruangan secara real-time, dan datanya dapat dilihat kapan saja dari aplikasi web."
+      }
+    ]
+  },
+  "features": {
+    "title": "Fitur utama",
+    "description": "Sederhana dipasang, jelas dibaca.",
+    "items": [
+      {
+        "title": "Suhu & humidity real-time",
+        "description": "Dua pembacaan penting ruangan dalam satu perangkat."
+      },
+      {
+        "title": "Koneksi LAN atau WiFi",
+        "description": "Pilih sambungan kabel atau nirkabel sesuai kondisi ruangan Anda."
+      },
+      {
+        "title": "Aplikasi monitoring web",
+        "description": "Lihat data dari browser, tanpa perangkat tambahan."
+      },
+      {
+        "title": "Mudah dipasang, hemat daya",
+        "description": "Pasang di titik yang ingin dipantau dan langsung digunakan."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "Galeri produk",
+    "images": [
+      {
+        "src": "assets/produk-depan-dahola.png",
+        "alt": "Tampilan depan perangkat sensor Dahola"
+      },
+      {
+        "src": "assets/produk-paket-dahola.png",
+        "alt": "Paket perangkat Dahola DL-ETH01 beserta sensor DTH-280"
+      }
+    ],
+    "demoTitle": "Ingin melihat aplikasi monitoring?",
+    "demoDescription": "Hubungi tim Dahola untuk meminta informasi dan demo tampilan aplikasi sebelum memesan.",
+    "demoCta": {
+      "label": "Minta demo aplikasi",
+      "href": "https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20melihat%20demo%20aplikasi%20monitoring."
+    }
+  },
+  "pricing": {
+    "title": "Harga transparan.",
+    "description": "Tanyakan ketersediaan dan proses pemesanan langsung kepada tim Dahola.",
+    "productName": "Dahola Sensor Suhu & Kelembapan",
+    "price": "Rp3.000.000",
+    "details": [
+      "Harga per unit",
+      "Belum termasuk PPN dan ongkos kirim",
+      "Koneksi LAN atau WiFi dan aplikasi monitoring web"
+    ],
+    "primaryCta": {
+      "label": "Tanya & pesan via WhatsApp",
+      "href": "https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20memesan%20sensor%20Dahola%20seharga%20Rp3.000.000."
+    },
+    "secondaryCta": {
+      "label": "Hubungi via email",
+      "href": "mailto:cek.sahatuh@gmail.com?subject=Permintaan%20informasi%20Dahola"
+    }
+  },
+  "segments": {
+    "title": "Cocok untuk siapa saja",
+    "items": [
+      {
+        "label": "Perusahaan",
+        "title": "Gudang, pabrik, data center",
+        "description": "Pantau titik-titik penting sesuai kebutuhan, beli per unit, dan dapatkan faktur."
+      },
+      {
+        "label": "Instansi",
+        "title": "Rumah sakit, lab, sekolah, kantor",
+        "description": "Pantauan andal dengan sertifikat kalibrasi yang disiapkan untuk kebutuhan instansi."
+      },
+      {
+        "label": "Perorangan",
+        "title": "Rumah, ruang server kecil, koleksi",
+        "description": "Mudah dipasang dengan harga yang jelas, dan bisa dibeli langsung."
+      }
+    ]
+  },
+  "productInfo": {
+    "title": "Informasi produk",
+    "rows": [
+      {
+        "label": "Parameter yang dipantau",
+        "detail": "Suhu dan kelembapan"
+      },
+      {
+        "label": "Konektivitas",
+        "detail": "LAN atau WiFi"
+      },
+      {
+        "label": "Aplikasi monitoring",
+        "detail": "Berbasis web, diakses melalui browser"
+      },
+      {
+        "label": "Sertifikat kalibrasi",
+        "detail": "Dapat disiapkan untuk kebutuhan instansi. Konfirmasikan detail saat menghubungi kami."
+      }
+    ],
+    "note": "Rentang pengukuran, akurasi, daya, dimensi, garansi, dan ongkos kirim dapat dikonfirmasikan langsung kepada tim Dahola sebelum pemesanan."
+  },
+  "faq": {
+    "title": "Pertanyaan umum",
+    "items": [
+      {
+        "question": "Bagaimana Dahola terhubung ke jaringan?",
+        "answer": "Dahola terhubung lewat LAN atau WiFi."
+      },
+      {
+        "question": "Bagaimana cara melihat datanya?",
+        "answer": "Data dilihat melalui aplikasi monitoring berbasis web yang dibuka dari browser."
+      },
+      {
+        "question": "Apakah ada harga grosir?",
+        "answer": "Saat ini tidak ada harga grosir. Harga Rp3.000.000 per unit, belum termasuk PPN."
+      },
+      {
+        "question": "Apakah tersedia sertifikat kalibrasi?",
+        "answer": "Sertifikat kalibrasi disiapkan untuk kebutuhan instansi. Hubungi kami untuk detailnya."
+      },
+      {
+        "question": "Bagaimana garansi dan pengirimannya?",
+        "answer": "Informasi garansi, ongkos kirim, dan estimasi pengiriman dapat dikonfirmasikan sebelum pemesanan. Silakan hubungi tim Dahola."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Mulai pantau ruangan Anda hari ini.",
+    "description": "Tanyakan spesifikasi, ketersediaan, faktur, atau pemesanan langsung kepada tim kami.",
+    "primaryCta": {
+      "label": "Hubungi via WhatsApp",
+      "href": "https://wa.me/6287883796782?text=Halo%20Dahola%2C%20saya%20ingin%20bertanya%20tentang%20produk%20Dahola."
+    },
+    "secondaryCta": {
+      "label": "Kirim email",
+      "href": "mailto:cek.sahatuh@gmail.com?subject=Informasi%20produk%20Dahola"
+    }
+  },
+  "footer": {
+    "copyright": "Dahola",
+    "email": "cek.sahatuh@gmail.com",
+    "whatsappLabel": "0878-8379-6782",
+    "whatsappHref": "https://wa.me/6287883796782"
+  }
+}

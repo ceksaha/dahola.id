@@ -1,0 +1,184 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "site"
+    label: "Konten Website"
+    delete: false
+    files:
+      - name: "homepage"
+        label: "Halaman Utama"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - { label: "Judul Website", name: "siteTitle", widget: "string" }
+          - { label: "Deskripsi untuk Mesin Pencari", name: "metaDescription", widget: "text" }
+          - { label: "Nama Brand", name: "brand", widget: "string" }
+          - label: "Menu Navigasi"
+            name: "navigation"
+            widget: "list"
+            fields:
+              - { label: "Nama Menu", name: "label", widget: "string" }
+              - { label: "Tujuan Menu (contoh: #fitur)", name: "href", widget: "string" }
+          - label: "Tombol Menu Atas"
+            name: "headerCta"
+            widget: "object"
+            fields:
+              - { label: "Teks Tombol", name: "label", widget: "string" }
+              - { label: "Tautan", name: "href", widget: "string" }
+          - label: "Bagian Utama"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Label Kecil", name: "eyebrow", widget: "string" }
+              - { label: "Judul Utama", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - { label: "Harga", name: "price", widget: "string" }
+              - { label: "Catatan Harga", name: "priceNote", widget: "string" }
+              - label: "Tombol Utama"
+                name: "primaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+              - label: "Tombol Kedua"
+                name: "secondaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+              - { label: "Poin Ringkas", name: "highlights", widget: "list", field: { label: "Poin", name: "item", widget: "string" } }
+              - { label: "Gambar Produk (path relatif)", name: "image", widget: "string" }
+              - { label: "Teks Alternatif Gambar", name: "imageAlt", widget: "string" }
+          - label: "Masalah dan Solusi"
+            name: "problem"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - { label: "Deskripsi Bagian", name: "description", widget: "text" }
+              - label: "Kartu"
+                name: "cards"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Judul", name: "title", widget: "string" }
+                  - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Fitur"
+            name: "features"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - { label: "Deskripsi Bagian", name: "description", widget: "text" }
+              - label: "Daftar Fitur"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Judul", name: "title", widget: "string" }
+                  - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Galeri Produk"
+            name: "gallery"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - label: "Gambar"
+                name: "images"
+                widget: "list"
+                fields:
+                  - { label: "Path Gambar (contoh: assets/foto.png)", name: "src", widget: "string" }
+                  - { label: "Teks Alternatif", name: "alt", widget: "string" }
+              - { label: "Judul Demo", name: "demoTitle", widget: "string" }
+              - { label: "Deskripsi Demo", name: "demoDescription", widget: "text" }
+              - label: "Tombol Demo"
+                name: "demoCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+          - label: "Harga dan Pemesanan"
+            name: "pricing"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - { label: "Deskripsi Bagian", name: "description", widget: "text" }
+              - { label: "Nama Produk", name: "productName", widget: "string" }
+              - { label: "Harga", name: "price", widget: "string" }
+              - { label: "Rincian Harga", name: "details", widget: "list", field: { label: "Rincian", name: "item", widget: "string" } }
+              - label: "Tombol WhatsApp"
+                name: "primaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+              - label: "Tombol Email"
+                name: "secondaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+          - label: "Segmen Pengguna"
+            name: "segments"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - label: "Daftar Segmen"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: "Judul", name: "title", widget: "string" }
+                  - { label: "Deskripsi", name: "description", widget: "text" }
+          - label: "Informasi Produk"
+            name: "productInfo"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - label: "Informasi"
+                name: "rows"
+                widget: "list"
+                fields:
+                  - { label: "Nama Informasi", name: "label", widget: "string" }
+                  - { label: "Detail", name: "detail", widget: "text" }
+              - { label: "Catatan", name: "note", widget: "text" }
+          - label: "FAQ"
+            name: "faq"
+            widget: "object"
+            fields:
+              - { label: "Judul Bagian", name: "title", widget: "string" }
+              - label: "Pertanyaan"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Pertanyaan", name: "question", widget: "string" }
+                  - { label: "Jawaban", name: "answer", widget: "text" }
+          - label: "Kontak"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Judul", name: "title", widget: "string" }
+              - { label: "Deskripsi", name: "description", widget: "text" }
+              - label: "Tombol WhatsApp"
+                name: "primaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+              - label: "Tombol Email"
+                name: "secondaryCta"
+                widget: "object"
+                fields:
+                  - { label: "Teks", name: "label", widget: "string" }
+                  - { label: "Tautan", name: "href", widget: "string" }
+          - label: "Footer"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Nama Copyright", name: "copyright", widget: "string" }
+              - { label: "Alamat Email", name: "email", widget: "string" }
+              - { label: "Nomor WhatsApp (tampilan)", name: "whatsappLabel", widget: "string" }
+              - { label: "Tautan WhatsApp", name: "whatsappHref", widget: "string" }
